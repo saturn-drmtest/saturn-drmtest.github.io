@@ -50,8 +50,11 @@
 
     <script src="/assets/js/anime-master/lib/anime.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"
-        integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"
+        integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script> -->
 
 </head>
 
@@ -126,6 +129,22 @@
         </div>
     </section>
 
+    <a id="backtotop">
+        <svg id="layer2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.85 35.95">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: none;
+                        stroke-miterlimit: 10;
+                    }
+                </style>
+            </defs>
+            <title>backtotop</title>
+            <polyline class="cls-1" points="0.43 13.95 8.43 0.95 16.43 13.95" />
+            <line class="cls-1" x1="8.43" y1="25.95" x2="8.43" y2="0.95" />
+        </svg>
+    </a>
+
     <section class="indexsection">
         <div class="bgimg"></div>
         <div class="myinfo">
@@ -190,23 +209,114 @@
             <div class="sociallowerline"></div>
         </div>
 
-        <div class="scrolldown">
-            <svg id="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 11.04">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: transparent;
-                            stroke-miterlimit: 10;
-                            stroke-width: 2px;
-                        }
-                    </style>
-                </defs>
-                <title>scrolldown</title>
-                <polyline class="cls-1" points="0.57 0.82 13.57 9.82 26.57 0.82" />
-            </svg>
-        </div>
+        <a href="#architecture">
+            <div class="scrolldown section1">
+                <svg id="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 11.04">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: transparent;
+                                stroke-miterlimit: 10;
+                                stroke-width: 2px;
+                            }
+                        </style>
+                    </defs>
+                    <title>scrolldown</title>
+                    <polyline class="cls-1" points="0.57 0.82 13.57 9.82 26.57 0.82" />
+                </svg>
+            </div>
+        </a>
 
     </section>
+
+    <section id="architecture" class="samples">
+        <div class="bgimg2"></div>
+
+        <a href="#coding">
+            <div class="scrolldown section2">
+                <svg id="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 11.04">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: transparent;
+                                stroke-miterlimit: 10;
+                                stroke-width: 2px;
+                            }
+                        </style>
+                    </defs>
+                    <title>scrolldown</title>
+                    <polyline class="cls-1" points="0.57 0.82 13.57 9.82 26.57 0.82" />
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="coding" class="samples">
+        <div class="bgimg3"></div>
+
+        <a href="#literature">
+            <div class="scrolldown section3">
+                <svg id="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 11.04">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: transparent;
+                                stroke-miterlimit: 10;
+                                stroke-width: 2px;
+                            }
+                        </style>
+                    </defs>
+                    <title>scrolldown</title>
+                    <polyline class="cls-1" points="0.57 0.82 13.57 9.82 26.57 0.82" />
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="literature" class="samples">
+        <div class="bgimg4"></div>
+    </section>
+
+    <!-- scroll smoothly -->
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- end scroll smoothly -->
+
+    <!-- back to top -->
+    <script class="backtotop">
+        var btn = $('#backtotop');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+    <!-- end back to top -->
 
     <script class="anime">
         anime({
@@ -221,9 +331,9 @@
     </script>
 
     <script class="fadeinout">
-        setTimeout(function () { $(".indexsection").hide(); }, 0);
+        setTimeout(function () { $(".indexsection, .samples").hide(); }, 0);
         setTimeout(function () { $(".loader").fadeOut(2500); }, 3000);
-        setTimeout(function () { $(".indexsection").fadeIn(1500); }, 4000);
+        setTimeout(function () { $(".indexsection, .samples").fadeIn(1500); }, 4000);
         setTimeout(function () { $(".infopic, .myname, .maintitles, .mytitles, .social, .socialupperline, .sociallowerline, .scrolldown").hide(); }, 4000);
         setTimeout(function () { $(".infopic").fadeIn(500); }, 4500);
         setTimeout(function () { $(".myname").fadeIn(500); }, 5000);
@@ -263,9 +373,22 @@
             loop: true,
             easing: 'easeInOutSine',
             duration: 1000,
-            stroke: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 1)']
+            opacity: [0, 1]
+            // stroke: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 1)']
         })
     </script>
+
+    <!-- <script class="backtotop">
+        anime({
+            targets: 'a#backtotop svg',
+            translateY: -25,
+            loop: true,
+            easing: 'easeInOutSine',
+            duration: 1000,
+            opacity: [0, 1]
+            // stroke: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 1)']
+        })
+    </script> -->
 
 </body>
 

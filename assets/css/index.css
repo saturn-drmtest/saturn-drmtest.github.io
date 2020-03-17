@@ -28,9 +28,40 @@ body, html {
     }
 } */
 
+#backtotop {
+    /* display: inline-block; */
+    /* background-color: #FF9800; */
+    width: 20px;
+    /* height: 40px; */
+    /* text-align: center; */
+    /* border-radius: 4px; */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    stroke: #fff;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    /* visibility: hidden; */
+    z-index: 1000;
+}
+
+#backtotop:hover {
+    cursor: pointer;
+    stroke: #fd746c;
+    transition: .3s;
+    /* background-color: #333; */
+}
+
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 section.indexsection {
     display: block;
     align-items: center;
+    padding-bottom: 0;
+    margin-top: 0;
 }
 
 section.indexsection div.bgimg {
@@ -40,6 +71,39 @@ section.indexsection div.bgimg {
     background-size: cover;
     top: 0;
     left: 0;
+}
+
+div.bgimg2 {
+    background-image: url("/assets/img/covers/architecturecover.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    align-items: center;
+}
+
+div.bgimg3 {
+    background-image: url("/assets/img/covers/codingcover.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    align-items: center;
+}
+
+div.bgimg4 {
+    background-image: url("/assets/img/covers/literaturecover.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    align-items: center;
 }
 
 section.indexsection div.myinfo {
@@ -78,6 +142,7 @@ section.indexsection div.infopic img {
 p, h1, h2, h3 {
     font-family: Montserrat, source-han-sans-cjk-sc, source-han-sans-cjk-sc, sans-serif;
     color: #2c3e50;
+    cursor: default;
 }
 
 h1.myname {
@@ -149,6 +214,16 @@ svg.social:hover {
     fill: #fd746c;
 }
 
+section.samples {
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
 div.scrolldown {
     position: absolute;
     bottom: 20px;
@@ -156,6 +231,11 @@ div.scrolldown {
     height: 50px;
     width: 50px;
     stroke: #fff;
+}
+
+div.scrolldown:hover {
+    stroke: #fd746c;
+    transition: .3s;
 }
 
 svg#图层_1 {
