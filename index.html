@@ -48,19 +48,27 @@
         gtag('config', 'UA-156998560-1');
     </script>
 
+    <!-- anime-master -->
     <script src="/assets/js/anime-master/lib/anime.min.js"></script>
 
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- aos@next     -->
+    <!-- <link rel="stylesheet" href="/assets/js/aos-2/dist/aos.css" /> -->
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d61407055c.js" crossorigin="anonymous"></script>
 
     <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"
         integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script> -->
 
 </head>
 
-
 <body>
 
+    <!-- loading anime -->
     <section class="loader">
         <div class="main-anime">
             <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +136,9 @@
             </svg>
         </div>
     </section>
+    <!-- end loading anime -->
 
+    <!-- back to top icon -->
     <a id="backtotop">
         <svg id="layer2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.85 35.95">
             <defs>
@@ -142,10 +152,28 @@
             <title>backtotop</title>
             <polyline class="cls-1" points="0.43 13.95 8.43 0.95 16.43 13.95" />
             <line class="cls-1" x1="8.43" y1="25.95" x2="8.43" y2="0.95" />
+            <line class="cls-1" x1="0.43" y1="0.95" x2="16.43" y2="0.95" />
         </svg>
     </a>
+    <!-- end back to top icon -->
 
-    <section class="indexsection">
+    <!-- top nav, hide when on top -->
+    <div class="topnav" id="navbar">
+        <a class="homenav" href="#home"><img src="/assets/img/logo.svg" />
+            <p>Zihan MEI</p>
+        </a>
+        <div class="othernav">
+            <a id="architecturenav" href="#architecture">Architecture</a>
+            <a id="codingnav" href="#coding">Coding</a>
+            <a id="literaturenav" href="#literature">Literature</a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="narrownav()">
+                <i class="fa fa-bars"></i>
+            </a> -->
+        </div>
+    </div>
+    <!-- end top nav -->
+
+    <section class="indexsection" id="home">
         <div class="bgimg"></div>
         <div class="myinfo">
             <div class="infopic">
@@ -230,8 +258,31 @@
     </section>
 
     <section id="architecture" class="samples">
-        <div class="bgimg2"></div>
-
+        <div class="bgimg2">
+            <div class="inner"></div>
+            <a href="https://www.zmei.moe/essays/2020-01-28-study-on-tod.html" class="forcard">
+                <div class="card archcard" id="proj1">
+                    <img src="/assets/img/00architecture/00preterm/00covercover.jpg" />
+                    <div class="words">
+                        <h2>Study On The Development Of TOD</h2>
+                        <p>A comparison on the activities and building functions around two metro station in Boston.</p>
+                        <p>A study on the potential TOD metro stations based on economic conditions around.</p>
+                        <p>Used ArcGIS, Rhino, Grasshopper & Python.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.zmei.moe/essays/2020-01-28-study-on-tod.html" class="forcard">
+                <div class="card archcard" id="proj2">
+                    <img src="/assets/img/00architecture/00preterm/00covercover.jpg" />
+                    <div class="words">
+                        <h2>Study On The Development Of TOD</h2>
+                        <p>A comparison on the activities and building functions around two metro station in Boston.</p>
+                        <p>A study on the potential TOD metro stations based on economic conditions around.</p>
+                        <p>Used ArcGIS, Rhino, Grasshopper & Python.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
         <a href="#coding">
             <div class="scrolldown section2">
                 <svg id="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 11.04">
@@ -252,7 +303,9 @@
     </section>
 
     <section id="coding" class="samples">
-        <div class="bgimg3"></div>
+        <div class="bgimg3">
+            <div class="inner"></div>
+        </div>
 
         <a href="#literature">
             <div class="scrolldown section3">
@@ -274,7 +327,9 @@
     </section>
 
     <section id="literature" class="samples">
-        <div class="bgimg4"></div>
+        <div class="bgimg4">
+            <div class="inner"></div>
+        </div>
     </section>
 
     <!-- scroll smoothly -->
@@ -318,6 +373,7 @@
     </script>
     <!-- end back to top -->
 
+    <!-- loading anime -->
     <script class="anime">
         anime({
             targets: 'div.main-anime svg path, div.main-anime svg line',
@@ -331,9 +387,9 @@
     </script>
 
     <script class="fadeinout">
-        setTimeout(function () { $(".indexsection, .samples").hide(); }, 0);
+        setTimeout(function () { $(".indexsection, .samples, .topnav").hide(); }, 0);
         setTimeout(function () { $(".loader").fadeOut(2500); }, 3000);
-        setTimeout(function () { $(".indexsection, .samples").fadeIn(1500); }, 4000);
+        setTimeout(function () { $(".indexsection, .samples, .topnav").fadeIn(1500); }, 4000);
         setTimeout(function () { $(".infopic, .myname, .maintitles, .mytitles, .social, .socialupperline, .sociallowerline, .scrolldown").hide(); }, 4000);
         setTimeout(function () { $(".infopic").fadeIn(500); }, 4500);
         setTimeout(function () { $(".myname").fadeIn(500); }, 5000);
@@ -342,6 +398,7 @@
         setTimeout(function () { $(".social, .socialupperline, .sociallowerline, .scrolldown").show(); }, 6500);
     </script>
 
+    <!-- anime for social icons -->
     <script class="socialanime">
         var socialicons = anime.timeline({
             delay: 6500,
@@ -355,6 +412,7 @@
             .add({ targets: 'svg.mail', fill: ['rgba(44, 62, 80, 0)', 'rgba(44, 62, 80, 1)'], translateX: [150, 240] }, 0);
     </script>
 
+    <!-- the head and bottom lines of social contacts -->
     <script class="sociallines">
         var sociallines = anime.timeline({
             delay: 6500,
@@ -366,6 +424,7 @@
             .add({ targets: 'div.sociallowerline', width: [0, '300px'] }, 0);
     </script>
 
+    <!-- the moving icon of scrolling down -->
     <script class="scrolldownanime">
         anime({
             targets: 'div.scrolldown svg',
@@ -378,17 +437,65 @@
         })
     </script>
 
-    <!-- <script class="backtotop">
-        anime({
-            targets: 'a#backtotop svg',
-            translateY: -25,
-            loop: true,
-            easing: 'easeInOutSine',
-            duration: 1000,
-            opacity: [0, 1]
-            // stroke: ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 1)']
+    <!-- hide navbar when on the top -->
+    <script class="navbar">
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+        }
+    </script>
+
+    <!-- highlight navbar when scroll to the section -->
+    <script class="navbaractive">
+        var h = $(window).height();
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 0.5 * h && $(window).scrollTop() < 1.5 * h) {
+                $('#architecturenav').addClass('active');
+            } else {
+                $('#architecturenav').removeClass('active');
+            }
+            if ($(window).scrollTop() > 1.5 * h && $(window).scrollTop() < 2.5 * h) {
+                $('#codingnav').addClass('active');
+            } else {
+                $('#codingnav').removeClass('active');
+            }
+            if ($(window).scrollTop() > 2.5 * h && $(window).scrollTop() < 4 * h) {
+                $('#literaturenav').addClass('active');
+            } else {
+                $('#literaturenav').removeClass('active');
+            }
+        });
+    </script>
+
+    <!-- show and hide the cards -->
+    <script class="showcard">
+        var h = $(window).height();
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 0.5 * h && $(window).scrollTop() < 1.5 * h) {
+                anime({
+                    targets: '.archcard',
+                    translateY: '5%',
+                    opacity: 1,
+                    loop: false,
+                    duration: 2000
+                })
+            }
+            else {
+                anime({
+                    targets: '.archcard',
+                    translateY: 0,
+                    opacity: 0,
+                    loop: false,
+                    duration: 2000
+                })
+            }
         })
-    </script> -->
+    </script>
 
 </body>
 
