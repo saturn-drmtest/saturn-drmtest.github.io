@@ -158,18 +158,18 @@
     <!-- end back to top icon -->
 
     <!-- top nav, hide when on top -->
-    <div class="topnav" id="navbar">
+    <div class="topnav navori" id="navbar">
         <a class="homenav" href="#home"><img src="/assets/img/logo.svg" />
             <p>Zihan MEI</p>
         </a>
         <div class="othernav">
-            <a id="architecturenav" href="#architecture">Architecture</a>
-            <a id="codingnav" href="#coding">Coding</a>
-            <a id="literaturenav" href="#literature">Literature</a>
-            <!-- <a href="javascript:void(0);" class="icon" onclick="narrownav()">
-                <i class="fa fa-bars"></i>
-            </a> -->
+            <a class="resdown" id="architecturenav" href="#architecture"><p>Architecture</p></a>
+            <a class="resdown" id="codingnav" href="#coding"><p>Coding</p></a>
+            <a class="resdown" id="literaturenav" href="#literature"><p>Literature</p></a>
         </div>
+        <a class="dropicon" onclick="narrownav()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
     <!-- end top nav -->
 
@@ -260,29 +260,32 @@
     <section id="architecture" class="samples">
         <div class="bgimg2">
             <div class="inner"></div>
-            <a href="https://www.zmei.moe/essays/2020-01-28-study-on-tod.html" class="forcard">
-                <div class="card archcard" id="proj1">
+            <div class="archrow row">
+                <div class="card archcard cardori" id="proj1">
                     <img src="/assets/img/00architecture/00preterm/00covercover.jpg" />
                     <div class="words">
-                        <h2>Study On The Development Of TOD</h2>
+                        <h2><a href="https://www.zmei.moe/essays/2020-01-28-study-on-tod.html" class="forcard">Study On
+                                The
+                                Development Of TOD</a></h2>
                         <p>A comparison on the activities and building functions around two metro station in Boston.</p>
                         <p>A study on the potential TOD metro stations based on economic conditions around.</p>
                         <p>Used ArcGIS, Rhino, Grasshopper & Python.</p>
                     </div>
                 </div>
-            </a>
-            <a href="https://www.zmei.moe/essays/2020-01-28-study-on-tod.html" class="forcard">
-                <div class="card archcard" id="proj2">
-                    <img src="/assets/img/00architecture/00preterm/00covercover.jpg" />
+                <div class="card archcard cardori" id="proj2">
+                    <img src="/assets/img/00architecture/01dashiban/01cover.jpg" />
                     <div class="words">
-                        <h2>Study On The Development Of TOD</h2>
-                        <p>A comparison on the activities and building functions around two metro station in Boston.</p>
-                        <p>A study on the potential TOD metro stations based on economic conditions around.</p>
-                        <p>Used ArcGIS, Rhino, Grasshopper & Python.</p>
+                        <h2><a href="https://www.zmei.moe/projects/2020-01-22-urban-intensification.html"
+                                class="forcard">Urban Intensification</a></h2>
+                        <p>The project is located on the void space between the entrance and administrative building at
+                            Tsinghua, aimed to intensify the functions here and to explore the relationships among each
+                            building, activating the space, inviting people onto the site, and offering daily service
+                            for students, tourists, and professors.</p>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
+
         <a href="#coding">
             <div class="scrolldown section2">
                 <svg id="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 11.04">
@@ -305,6 +308,30 @@
     <section id="coding" class="samples">
         <div class="bgimg3">
             <div class="inner"></div>
+            <div class="codingrow row">
+                <div class="card codingcard cardori" id="proj1">
+                    <img src="/assets/img/00architecture/00preterm/00covercover.jpg" />
+                    <div class="words">
+                        <h2><a href="https://www.zmei.moe/essays/2020-01-28-study-on-tod.html" class="forcard">Study On
+                                The
+                                Development Of TOD</a></h2>
+                        <p>A comparison on the activities and building functions around two metro station in Boston.</p>
+                        <p>A study on the potential TOD metro stations based on economic conditions around.</p>
+                        <p>Used ArcGIS, Rhino, Grasshopper & Python.</p>
+                    </div>
+                </div>
+                <div class="card codingcard cardori" id="proj2">
+                    <img src="/assets/img/00architecture/01dashiban/01cover.jpg" />
+                    <div class="words">
+                        <h2><a href="https://www.zmei.moe/projects/2020-01-22-urban-intensification.html"
+                                class="forcard">Urban Intensification</a></h2>
+                        <p>The project is located on the void space between the entrance and administrative building at
+                            Tsinghua, aimed to intensify the functions here and to explore the relationships among each
+                            building, activating the space, inviting people onto the site, and offering daily service
+                            for students, tourists, and professors.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <a href="#literature">
@@ -329,6 +356,30 @@
     <section id="literature" class="samples">
         <div class="bgimg4">
             <div class="inner"></div>
+            <div class="literrow row">
+                <div class="card litercard cardori" id="proj1">
+                    <img src="/assets/img/00architecture/00preterm/00covercover.jpg" />
+                    <div class="words">
+                        <h2><a href="https://www.zmei.moe/essays/2020-01-28-study-on-tod.html" class="forcard">Study On
+                                The
+                                Development Of TOD</a></h2>
+                        <p>A comparison on the activities and building functions around two metro station in Boston.</p>
+                        <p>A study on the potential TOD metro stations based on economic conditions around.</p>
+                        <p>Used ArcGIS, Rhino, Grasshopper & Python.</p>
+                    </div>
+                </div>
+                <div class="card litercard cardori" id="proj2">
+                    <img src="/assets/img/00architecture/01dashiban/01cover.jpg" />
+                    <div class="words">
+                        <h2><a href="https://www.zmei.moe/projects/2020-01-22-urban-intensification.html"
+                                class="forcard">Urban Intensification</a></h2>
+                        <p>The project is located on the void space between the entrance and administrative building at
+                            Tsinghua, aimed to intensify the functions here and to explore the relationships among each
+                            building, activating the space, inviting people onto the site, and offering daily service
+                            for students, tourists, and professors.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -420,6 +471,7 @@
             loop: false,
             duration: 500
         })
+            .add({ targets: 'div.social', width: [0, '300px'] }, 0)
             .add({ targets: 'div.socialupperline', width: [0, '300px'] }, 0)
             .add({ targets: 'div.sociallowerline', width: [0, '300px'] }, 0);
     </script>
@@ -445,7 +497,7 @@
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 document.getElementById("navbar").style.top = "0";
             } else {
-                document.getElementById("navbar").style.top = "-50px";
+                document.getElementById("navbar").style.top = "-300px";
             }
         }
     </script>
@@ -472,22 +524,103 @@
         });
     </script>
 
+    <!-- responsive navbar when width<600 -->
+    <script class="responsivenavbar">
+        jQuery(document).ready(function ($) {
+            var alterClass = function () {
+                var ww = $(window).width();
+                if (ww > 600) {
+                    $('#navbar').removeClass('navres');
+                    $('#navbar').addClass('navori');
+                    $('.cardori').removeClass('rescard');
+                    $('.cardori').addClass('card');
+                } else if (ww <= 601) {
+                    $('#navbar').addClass('navres');
+                    $('#navbar').removeClass('navori');
+                    $('.cardori').addClass('rescard');
+                    $('.cardori').removeClass('card');
+                };
+            };
+            $(window).resize(function () {
+                alterClass();
+            });
+            //Fire it when the page first loads:
+            alterClass();
+        });
+    </script>
+    <script class="opennavres">
+        function narrownav() {
+            if ($('.resdown').css('display') === 'none') {
+                $('.resdown').css('display','block');
+                anime({
+                    targets: '.othernav',
+                    opacity: [0,1],
+                    scale: [0,1],
+                    loop: false,
+                    easing: 'easeOutBack',
+                    duration: 1000
+                })
+            }
+            else {
+                $('.resdown').css('display','none');
+                anime({
+                    targets: '.othernav',
+                    opacity: [1,0],
+                    scale: [1,0],
+                    loop: false,
+                    easing: 'easeOutBack',
+                    duration: 1000
+                })
+            }
+        }
+    </script>
+
     <!-- show and hide the cards -->
     <script class="showcard">
         var h = $(window).height();
         $(window).scroll(function () {
-            if ($(window).scrollTop() > 0.5 * h && $(window).scrollTop() < 1.5 * h) {
+            if ($(window).scrollTop() > 0.5 * h && $(window).scrollTop() < 1.6 * h) {
                 anime({
                     targets: '.archcard',
-                    translateY: '5%',
+                    translateY: '10%',
                     opacity: 1,
                     loop: false,
                     duration: 2000
                 })
-            }
-            else {
                 anime({
-                    targets: '.archcard',
+                    targets: '.codingcard, .litercard',
+                    translateY: 0,
+                    opacity: 0,
+                    loop: false,
+                    duration: 2000
+                })
+            }
+            if ($(window).scrollTop() > 1.4 * h && $(window).scrollTop() < 2.6 * h) {
+                anime({
+                    targets: '.codingcard',
+                    translateY: '10%',
+                    opacity: 1,
+                    loop: false,
+                    duration: 2000
+                })
+                anime({
+                    targets: '.archcard, .litercard',
+                    translateY: 0,
+                    opacity: 0,
+                    loop: false,
+                    duration: 2000
+                })
+            }
+            if ($(window).scrollTop() > 2.4 * h && $(window).scrollTop() < 3.6 * h) {
+                anime({
+                    targets: '.litercard',
+                    translateY: '10%',
+                    opacity: 1,
+                    loop: false,
+                    duration: 2000
+                })
+                anime({
+                    targets: '.archcard, .codingcard',
                     translateY: 0,
                     opacity: 0,
                     loop: false,
