@@ -602,7 +602,7 @@ a.seemore {
     position: absolute;
     /* background-color: rgba(44, 62, 80, .3); */
     height: 2rem;
-    width: auto;
+    width: 80px;
     left: 30px;
     bottom: 30px;
     color: #fff;
@@ -616,10 +616,10 @@ a.seemore:hover {
 
 a.seemore svg {
     position: absolute;
-    left: 30px;
-    bottom: 12px;
-    width: 8rem;
-    height: 1.5rem;
+    left: -10px;
+    bottom: 0px;
+    width: 6rem;
+    /* height: 1.5rem; */
 }
 
 a.seemore svg line {
@@ -651,6 +651,74 @@ a.seemore:hover svg .arrow-line {
 
 a.seemore:hover svg .arrow-head {
     transition: stroke-dashoffset ease-in .2s .5s;
+}
+
+section#footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #fee3e1;
+}
+
+section#footer div.footerwrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+section#footer div.footerwrap div.subfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 33%;
+    left: calc(50% - 150px);
+}
+
+section#footer div.footerwrap div#contact div.social {
+    background-color: transparent;
+}
+
+section#footer div.footerwrap p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+section#footer div.footerwrap a {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+section#footer div.footerwrap div#friend p {
+    display: inline-block;
+    /* left: 5%; */
+    padding-left: 5px;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+section#footer div.footerwrap div#friend svg {
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-bottom: 2.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+section#footer div.footerwrap div#friend a:hover {
+    color: #fd746c;
+    transition: .3s;
 }
 
 svg#图层_1 {
