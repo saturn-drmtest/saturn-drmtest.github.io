@@ -3,15 +3,16 @@
     <head>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type='text/javascript'>
+            $(document).ready(function(){
+             $( "#header" ).load( "index.html" );
+            });
+           </script>
     </head>
     <body>
-        <a class="icon" onclick="myfunc()">
-        click</a>
-
-        <script>
-            function myfunc(){
-                alert('111');
-            }
-        </script>
+        <div id='header'></div>
+        <div id="content">
+            <p>Zihan MEI</p>
+        </div>
     </body>
 </html>
