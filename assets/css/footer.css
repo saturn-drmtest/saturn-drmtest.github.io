@@ -42,7 +42,13 @@ div.social a {
     margin-top: 2rem;
 }
 
+div.social a:hover svg {
+    fill: #fd746c;
+    stroke: #fd746c;
+}
+
 div.social svg {
+    transition: .3s;
     width: 24px;
     height: 24px;
 }
