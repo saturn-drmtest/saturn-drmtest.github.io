@@ -9,8 +9,9 @@ body, html {
 }
 
 #offsetheader {
-    background-image: url(/assets/img/covers/architecturecover.jpg);
-    background-position: 50% 30%;
+    background-image: url(/assets/img/covers/literaturecover.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
     margin: auto;
     top: 0;
@@ -62,19 +63,35 @@ div.coverimg {
 }
 
 div.coverimg#img1 {
-    background-image: url(/assets/img/00architecture/02MAUD-EX01/01axoncover.jpg);
+    background-image: url(/assets/img/02literature/00guitar/2020-01-19昭和ロマンス/昭和ロマンスcover.jpg);
 }
 
 div.coverimg#img2 {
-    background-image: url(/assets/img/00architecture/03MAUD-EX02/01covercover.jpg);
+    background-image: url(/assets/img/02literature/00guitar/2019-08-06少年の梦/Lis-butterfly2cover.jpg);
 }
 
 div.coverimg#img3 {
-    background-image: url(/assets/img/00architecture/01dashiban/01cover.jpg);
+    background-image: url(/assets/img/02literature/00guitar/2019-07-18奇跡の山/heirinjidcover.jpg);
 }
 
 div.coverimg#img4 {
-    background-image: url(/assets/img/00architecture/00preterm/00covercover.jpg);
+    background-image: url(/assets/img/02literature/00guitar/2019-04-05-约定/coveryueding.jpg);
+}
+
+div.coverimg#img5 {
+    background-image: url(/assets/img/02literature/00guitar/2018-11-11theendoftheworld/theendoftheworldcover.png);
+}
+
+div.coverimg#img6 {
+    background-image: url(/assets/img/02literature/00guitar/2018-04-21奇跡の山/奇跡の山.jpg);
+}
+
+div.coverimg#img7 {
+    background-image: url(/assets/img/02literature/00guitar/2018-02-26枫叶城/Autumn\ Leaf\ Fred\ Bartelsori.png);
+}
+
+div.coverimg#img8 {
+    background-image: url(/assets/img/02literature/00guitar/2017-08-20旅行的意义/travelismeaningfulcover.jpg);
 }
 
 div.words {
@@ -112,7 +129,7 @@ a.column p {
     overflow: hidden;
     /* text-overflow: ellipsis; */
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 5;
     display: none;
 }
 
