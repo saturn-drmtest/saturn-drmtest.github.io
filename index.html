@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Home</title>
+    <title>Home - Zihan MEI's Site</title>
     <meta name="description" content="Welcome to My Personal Site!">
     <meta name="author" content="Zihan Zephaniah MEI">
 
@@ -159,13 +159,13 @@
 
     <!-- top nav, hide when on top -->
     <div class="topnav navori" id="navbar">
-        <a class="homenav" href="#home"><img src="/assets/img/logo.svg" />
+        <a class="homenav" href="#home" onclick="closenav()"><img src="/assets/img/logo.svg" />
             <p>Zihan MEI</p>
         </a>
         <div class="othernav">
-            <a class="resdown" id="architecturenav" href="#architecture">Architecture</a>
-            <a class="resdown" id="codingnav" href="#coding">Coding</a>
-            <a class="resdown" id="literaturenav" href="#literature">Literature</a>
+            <a class="resdown" id="architecturenav" href="#architecture" onclick="closenav()">Design</a>
+            <a class="resdown" id="codingnav" href="#coding" onclick="closenav()">Coding</a>
+            <a class="resdown" id="literaturenav" href="#literature" onclick="closenav()">Others</a>
         </div>
         <a class="dropicon" onclick="narrownav()">
             <i class="fa fa-bars"></i>
@@ -304,7 +304,7 @@
                 </svg>
             </div>
         </a>
-        <a class="seemore" href="https://saturn-drm.github.io/projects.html">View More<svg viewBox="0 0 89.4 12.4">
+        <a class="seemore" href="https://saturn-drm.github.io/projects.html">View All<svg viewBox="0 0 89.4 12.4">
                 <line class="arrow-line" x1="10" y1="6.2" x2="59.6" y2="6.2"></line>
                 <line class="arrow-head" x1="54.7" y1="0.7" x2="60.5" y2="6.5"></line>
                 <line class="arrow-head" x1="54.7" y1="11.7" x2="60.5" y2="5.8"></line>
@@ -352,7 +352,7 @@
                 </svg>
             </div>
         </a>
-        <a class="seemore" href="https://saturn-drm.github.io/blog.html">View More<svg viewBox="0 0 89.4 12.4">
+        <a class="seemore" href="https://saturn-drm.github.io/blog.html">View All<svg viewBox="0 0 89.4 12.4">
                 <line class="arrow-line" x1="10" y1="6.2" x2="59.6" y2="6.2"></line>
                 <line class="arrow-head" x1="54.7" y1="0.7" x2="60.5" y2="6.5"></line>
                 <line class="arrow-head" x1="54.7" y1="11.7" x2="60.5" y2="5.8"></line>
@@ -391,7 +391,7 @@
                 </div>
             </div>
         </div>
-        <a class="seemore" href="https://saturn-drm.github.io/guitar.html">View More<svg viewBox="0 0 89.4 12.4">
+        <a class="seemore" href="https://saturn-drm.github.io/guitar.html">View All<svg viewBox="0 0 89.4 12.4">
                 <line class="arrow-line" x1="10" y1="6.2" x2="59.6" y2="6.2"></line>
                 <line class="arrow-head" x1="54.7" y1="0.7" x2="60.5" y2="6.5"></line>
                 <line class="arrow-head" x1="54.7" y1="11.7" x2="60.5" y2="5.8"></line>
@@ -581,7 +581,7 @@
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 document.getElementById("navbar").style.top = "0";
             } else {
-                document.getElementById("navbar").style.top = "-300px";
+                document.getElementById("navbar").style.top = "-2000px";
             }
         }
     </script>
@@ -655,6 +655,13 @@
                     easing: 'easeOutBack',
                     duration: 1000
                 })
+            }
+        }
+    </script>
+    <script class="closenav">
+        function closenav() {
+            if ($('#navbar').hasClass('navres')) {
+                $('.resdown').css('display', 'none');
             }
         }
     </script>
