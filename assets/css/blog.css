@@ -42,6 +42,13 @@ section {
     /* background-color: #777777; */
 }
 
+h1.sectiontitle {
+    color: #fd746c;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 div.article {
     width: 90%;
     margin: auto;
@@ -53,7 +60,7 @@ div.article {
 
 div.article h1 {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 div.article h2 {
@@ -72,6 +79,20 @@ div.article p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
+}
+
+div.article img {
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin: auto; */
+    /* background-position: center center; */
+    /* background-size: contain; */
+    max-height: 10rem;
+}
+
+strong {
+    font-weight: 400;
 }
 
 div.article a {
