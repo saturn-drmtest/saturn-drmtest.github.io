@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Test</title>
-        <style>
-            #content {
-                width: 80%;
-                height: 300vh;
-                background-color: #fee3e1;
+
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/selection.css" />
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+            width: 80%;
+            height: 300vh;
+            margin: auto;
+            background-color: #fee3e1;
+        }
+    </style>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/marked-master/marked.min.js"></script>
+    <script src="/assets/js/require.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $("#header").load("/components/header-design.html");
+            $("#footer").load("/components/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id='header'></div>
+    <div id="content"></div>
+    <div id="footer"></div>
+    <script class="rendermd">
+        var fs = require('fs');
+        var fm = require('fm');
+
+        fs.readFile('/2017-08-20-travel-is-meaningful.md', 'utf8', function (err, data) {
+            if (err) {
+                throw err;
             }
-        </style>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script type='text/javascript'>
-            $(document).ready(function(){
-             $( "#header" ).load( "/components/header.html" );
-            });
-           </script>
-    </head>
-    <body>
-        <div id='header'></div>
-        <div id="content">
-            <p>Zihan MEI</p>
-        </div>
-    </body>
+            var content = fm(data);
+            document.getElementById('content').innerHTML = content;
+            // console.log(content)
+        });
+        // document.getElementById('content').innerHTML = marked('/2017-08-20-travel-is-meaningful.md');
+    </script>
+</body>
+
 </html>
