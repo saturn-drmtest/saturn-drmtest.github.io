@@ -48,6 +48,7 @@ The project is located on the void space between the entrance and administrative
 
 # Basic Info
 
+:empty | :empty
 ---- | ----
 Category | Professional work of urban design
 Location | Tsinghua, Beijing, China
