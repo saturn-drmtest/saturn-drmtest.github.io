@@ -75,20 +75,20 @@ div#toc.fix {
     transition: .3s;
 }
 
-a.tocicon {
+/* a.tocicon {
     display: none;
-}
+} */
 
 @media only screen and (max-width: 1400px) {
     #content {
         margin: auto;
+        width: 90%;
     }
 
-    a.tocicon {
+    /* a.tocicon {
         justify-content: center;
         align-items: center;
         display: flex;
-        /* display: block; */
         position: fixed;
         right: 1rem;
         bottom: 1rem;
@@ -100,10 +100,14 @@ a.tocicon {
         background-color: #ffffff;
         border-radius: 50%;
         box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05), 2px 4px 32px 0 rgba(0, 0, 0, 0.1), 0 0 64px 0 rgba(0, 0, 0, 0.2);
-    }
+    } */
 
     #toc {
         display: none;
+    }
+
+    div#post iframe {
+        width: 100%;
     }
 }
 /* 
