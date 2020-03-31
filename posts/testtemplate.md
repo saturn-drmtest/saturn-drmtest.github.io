@@ -76,7 +76,7 @@ function myfunc() {
 
 ## image
 
-![testimage](../saturn-drmtest.github.io/assets/img/Logo.png)
+![testimage](../assets/img/Logo.png)
 
 ## toc
 
