@@ -76,7 +76,7 @@ function myfunc() {
 
 ## image
 
-![testimage](../assets/img/Logo.png)
+![testimage](../../../assets/img/Logo.png)
 
 ## toc
 

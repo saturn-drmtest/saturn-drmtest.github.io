@@ -33,7 +33,7 @@ body, html {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link href="/assets/css/articlecontent.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/css/scrollbar.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/css/selection.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/css/backtotop.css" rel="stylesheet" type="text/css"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+<title>style test</title>
+<meta content="Welcome to My Personal Site!" name="description"/>
+<meta content="Zihan Zephaniah MEI" name="author"/>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600&amp;display=swap" rel="stylesheet"/>
+<script>
+        (function (d) {
+            var config = {
+                kitId: 'cmi7aqt',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+<!-- end fonts -->
+<!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon/site.webmanifest" rel="manifest"/>
+<link color="#2c3e50" href="/favicon/safari-pinned-tab.svg" rel="mask-icon"/>
+<link href="/favicon/favicon.ico" rel="shortcut icon"/>
+<meta content="ZMei.moe" name="apple-mobile-web-app-title"/>
+<meta content="ZMei.moe" name="application-name"/>
+<meta content="#fee3e1" name="msapplication-TileColor"/>
+<meta content="/favicon/browserconfig.xml" name="msapplication-config"/>
+<meta content="#ffffff" name="theme-color"/>
+<!-- end favicons snippet -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156998560-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156998560-1');
+    </script>
+<!-- anime-master -->
+<script src="/assets/js/anime-master/lib/anime.min.js"></script>
+<!-- jQuery -->
+<script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- fontawesome -->
+<!-- <script src="https://kit.fontawesome.com/d61407055c.js" crossorigin="anonymous"></script> -->
+<script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("/components/header-blog.html");
+            $("#footer").load("/components/footer.html");
+        });
+    </script>
+<link href="/assets/js/highlight/atom-one-light-edit.css" rel="stylesheet"/>
+<script src="/assets/js/highlight/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<div id="header"></div>
+<!-- back to top icon -->
+<a id="backtotop">
+<svg id="layer2" viewbox="0 0 16.85 35.95" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+                    .cls-1 {
+                        fill: none;
+                        stroke-miterlimit: 10;
+                    }
+                </style>
+</defs>
+<title>backtotop</title>
+<polyline class="cls-1" points="0.43 13.95 8.43 0.95 16.43 13.95"></polyline>
+<line class="cls-1" x1="8.43" x2="8.43" y1="25.95" y2="0.95"></line>
+<line class="cls-1" x1="0.43" x2="16.43" y1="0.95" y2="0.95"></line>
+</svg>
+</a>
+<!-- end back to top icon -->
+<div id="offsetheader">
+<img src="/assets/img/covers/codingcover.jpg"/>
+</div>
+<!-- <a class="tocicon" onclick="toc()">
+        <i class="fa fa-bars"></i>
+    </a> -->
+<div id="toc"><div class="toc">
+<ul>
+<li><a href="#head1">head1</a><ul>
+<li><a href="#subhead1">subhead1</a><ul>
+<li><a href="#subsubhead1">subsubhead1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#todo">todo</a><ul>
+<li><a href="#bold">bold</a></li>
+<li><a href="#italic">italic</a></li>
+<li><a href="#list">list</a></li>
+<li><a href="#number-list">number list</a></li>
+<li><a href="#quote">quote</a></li>
+<li><a href="#code">code</a></li>
+<li><a href="#link">link</a></li>
+<li><a href="#image">image</a></li>
+<li><a href="#toc">toc</a></li>
+<li><a href="#tables">tables</a></li>
+<li><a href="#direct-html-code">direct html code</a></li>
+<li><a href="#hr-lines">hr lines</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="post"><h1 class="anchor" id="head1">head1</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h2 class="anchor" id="subhead1">subhead1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h3 class="anchor" id="subsubhead1">subsubhead1</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h1 class="anchor" id="todo">todo</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h2 class="anchor" id="bold">bold</h2>
+<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
+<h2 class="anchor" id="italic">italic</h2>
+<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p>
+<h2 class="anchor" id="list">list</h2>
+<ul>
+<li>item1</li>
+<li>item2</li>
+<li>item3</li>
+</ul>
+<h2 class="anchor" id="number-list">number list</h2>
+<ol>
+<li>no1</li>
+<li>no2</li>
+<li>no3</li>
+</ol>
+<h2 class="anchor" id="quote">quote</h2>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</blockquote>
+<h2 class="anchor" id="code">code</h2>
+<pre><code class="python">import markdown
+a = markdown.markdown(markdownfile)
+print(a)
+</code></pre>
+<pre><code class="HTML">&lt;div id="content"&gt;&lt;/div&gt;
+</code></pre>
+<pre><code class="css">#content {
+margin: auto;
+padding: auto;
+}
+</code></pre>
+<pre><code class="javascript">function myfunc() {
+    document.getElementById("content").innerHTML = "test"
+}
+</code></pre>
+<h2 class="anchor" id="link">link</h2>
+<p><a href="https://www.zmei.moe">homepage</a></p>
+<h2 class="anchor" id="image">image</h2>
+<p><img alt="testimage" src="../../assets/img/Logo.png"/></p>
+<h2 class="anchor" id="toc">toc</h2>
+<p>need to generate toc with extensions</p>
+<p>and then insert it respectively into #toc div</p>
+<h2 class="anchor" id="tables">tables</h2>
+<p>need to generate table with extensions and edit later on the titles</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td>Professional work of urban design</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Tsinghua, Beijing, China</td>
+</tr>
+<tr>
+<td>Date of design</td>
+<td>Feb 2017 - Apr 2017</td>
+</tr>
+<tr>
+<td>Tutor</td>
+<td>Prof. Qi Xin</td>
+</tr>
+<tr>
+<td>Collaborator</td>
+<td>Wen Qiulin, Lei Yuxin, Jiang Haomao and other 10 students</td>
+</tr>
+<tr>
+<td>Total GFA</td>
+<td>73,000 m²</td>
+</tr>
+<tr>
+<td>Site area</td>
+<td>27,000 m²</td>
+</tr>
+<tr>
+<td>Green rate</td>
+<td>34%</td>
+</tr>
+<tr>
+<td>Floor area ratio</td>
+<td>2.74</td>
+</tr>
+</tbody>
+</table>
+<h2 class="anchor" id="direct-html-code">direct html code</h2>
+<iframe border="0" frameborder="no" height="86" marginheight="0" marginwidth="0" src="https://music.163.com/outchain/player?type=3&amp;id=2065011836&amp;auto=0&amp;height=66" width="420"></iframe>
+<iframe allow="autoplay" frameborder="no" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/746912935&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true" width="100%"></iframe>
+<h2 class="anchor" id="hr-lines">hr lines</h2>
+<hr class="anchor"/></div>
+</div>
+<div id="footer"></div>
+<!-- back to top -->
+<script class="backtotop">
+        var btn = $('#backtotop');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+<!-- end back to top -->
+<!-- scroll smoothly -->
+<script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+<!-- end scroll smoothly -->
+<script class="showtocwhensdrolldown">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                $('#toc').addClass('fix');
+            } else {
+                $('#toc').removeClass('fix');
+            }
+        });
+    </script>
+<!-- <script class="hidetoc">
+        jQuery(document).ready(function ($) {
+            var alterClass = function () {
+                var ww = $(window).width();
+                if (ww > 1400) {
+                    $('#toc').removeClass('res');
+                    $('#toc').addClass('fix');
+                } else if (ww <= 1401) {
+                    $('#toc').addClass('res');
+                    $('#toc').removeClass('fix');
+                };
+            };
+            $(window).resize(function () {
+                alterClass();
+            });
+            //Fire it when the page first loads:
+            alterClass();
+        });
+    </script> -->
+</body>
+</html>
