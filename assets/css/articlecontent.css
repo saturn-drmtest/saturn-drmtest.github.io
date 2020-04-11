@@ -167,13 +167,13 @@ div#post blockquote p {
     border-left: solid #888888 3px;
 }
 
-div#post p a {
+div#post p a, li a {
     color: #fd746c;
     text-decoration: none;
-    margin-left: .5rem;
+    /* margin-left: .5rem; */
 }
 
-div#post p a:hover {
+div#post p a:hover, li a:hover {
     color: #ff0d00;
     text-decoration: underline overline;
     transition: .3s;
