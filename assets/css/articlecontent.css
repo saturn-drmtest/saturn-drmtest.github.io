@@ -142,15 +142,22 @@ div#post p {
     font-size: 1rem;
     font-weight: 200;
     margin-left: 1rem;
-    display: flex;
+    /* display: flex; */
     text-align: justify;
 }
 
-div#post p  strong {
+div#post p code {
+    background-color: #ececec;
+    /* display: inline; */
+    white-space: nowrap;
+    /* height: 1rem; */
+}
+
+div#post p strong {
     font-weight: 400;
 }
 
-div#post p  em {
+div#post p em {
     font-style: italic;
 }
 
@@ -163,6 +170,7 @@ div#post blockquote p {
 div#post p a {
     color: #fd746c;
     text-decoration: none;
+    margin-left: .5rem;
 }
 
 div#post p a:hover {
